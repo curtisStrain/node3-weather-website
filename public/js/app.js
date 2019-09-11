@@ -1,9 +1,6 @@
 // THIS FILE IS THE CLIENT (browser) SIDE
 // FETCH is not part of javascript, part of the browser API, not accessible to NodeJS
 
-console.log('Client side js loaded')   // logged by web browser console
-
-
 const weatherForm = document.querySelector('form')
 const searchTerm = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
