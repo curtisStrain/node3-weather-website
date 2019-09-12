@@ -10,7 +10,7 @@ const messageTwo = document.querySelector('#message-2')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()   //here this prevents default behavior, page refresh
-    const url = `http://localhost:3000/weather?addr=${searchTerm.value}`
+    const url = `/weather?addr=${searchTerm.value}`   //removed localhost, this way request made to current domain
 
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
